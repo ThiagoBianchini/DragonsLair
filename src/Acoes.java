@@ -1,3 +1,7 @@
 public interface Acoes {
-    public int Atacar();
+
+    int Iniciativa(Modelo modelo);
+    int Atacar(Modelo modelo);
+    int Defender(Modelo modelo);
+
 }

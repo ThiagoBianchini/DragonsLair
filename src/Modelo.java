@@ -4,15 +4,6 @@ public class Modelo {
     private int defesa;
     private int agilidade;
 
-
-    public Modelo(int PV, int forca, int defesa, int agilidade) {
-        this.PV = PV;
-        this.forca = forca;
-        this.defesa = defesa;
-        this.agilidade = agilidade;
-    }
-
-
     public int getPV() {
         return PV;
     }
@@ -44,5 +35,21 @@ public class Modelo {
     public void setAgilidade(int agilidade) {
         this.agilidade = agilidade;
     }
+
+    public Modelo(int PV, int forca, int defesa, int agilidade) {
+        this.PV = PV;
+        this.forca = forca;
+        this.defesa = defesa;
+        this.agilidade = agilidade;
+    }
+
+    public interface Bater{
+        public int Dano();
+    }
+    public int Dano() {
+        return 0;
+    }
+
+
 
 }
