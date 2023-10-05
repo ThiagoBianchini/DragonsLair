@@ -46,10 +46,5 @@ public class Modelo {
     public interface Bater{
         public int Dano();
     }
-    public int Dano() {
-        return 0;
-    }
-
-
 
 }
