@@ -7,7 +7,6 @@ public class Guerreiro extends Modelo implements Modelo.Bater {
     }
 
     Random random = new Random();
-
     @Override
     public int Dano() {
         return (random.nextInt(4) + 1) + (random.nextInt(4) + 1) + this.getForca();

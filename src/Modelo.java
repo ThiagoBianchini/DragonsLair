@@ -47,4 +47,7 @@ public class Modelo {
         public int Dano();
     }
 
+    public int Dano() {
+        return 0;
+    }
 }
