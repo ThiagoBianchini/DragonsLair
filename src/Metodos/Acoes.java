@@ -1,3 +1,7 @@
+package Metodos;
+
+import Classes.Modelo;
+
 public interface Acoes {
 
     static int Iniciativa(Modelo modelo) {

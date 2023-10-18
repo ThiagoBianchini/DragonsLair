@@ -1,3 +1,5 @@
+package Classes;
+
 import java.util.Random;
 
 public class Barbaro extends Modelo implements Modelo.Bater {

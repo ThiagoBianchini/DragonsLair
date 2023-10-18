@@ -1,3 +1,7 @@
+package Classes;
+
+import Classes.Modelo;
+
 import java.util.Random;
 
 public class Guerreiro extends Modelo implements Modelo.Bater {

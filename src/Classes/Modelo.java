@@ -1,3 +1,5 @@
+package Classes;
+
 public class Modelo {
     private int PV;
     private int forca;

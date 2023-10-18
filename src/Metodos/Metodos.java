@@ -1,3 +1,9 @@
+package Metodos;
+
+import Classes.Modelo;
+
+import java.text.DateFormat;
+import java.util.Date;
 import java.util.Random;
 
 public class Metodos implements Acoes {
