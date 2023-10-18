@@ -2,7 +2,9 @@ package Metodos;
 
 import Classes.Modelo;
 
+import java.io.IOException;
 import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
 
@@ -44,5 +46,6 @@ public class Metodos implements Acoes {
         } else {
             System.out.println(modelo1.getClass().getName() + " ataca(" + ataque1 + "), mas " + modelo2.getClass().getName() + " defende(" + defesa2 + ").");
         }
+
     }
 }

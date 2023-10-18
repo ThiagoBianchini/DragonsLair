@@ -88,14 +88,34 @@ public class Main {
             System.out.println(jogadorNome + " começa");
             while (jogador.getPV() > 0 && monstro.getPV() > 0) {
                 Metodos.Batalhar(jogador, monstro);
+                GerarLog(nick, jogadorNome, monstroNome);
                 Metodos.Batalhar(monstro, jogador);
+                GerarLog(nick, jogadorNome, monstroNome);
             }
         } else if (monstroInit > jogadorInit) {
             System.out.println(monstroNome + " começa");
             while (jogador.getPV() > 0 && monstro.getPV() > 0) {
                 Metodos.Batalhar(monstro, jogador);
+                GerarLog(nick, jogadorNome, monstroNome);
                 Metodos.Batalhar(jogador, monstro);
+                GerarLog(nick, jogadorNome, monstroNome);
             }
+        }
+    }
+    public static void GerarLog(String nick, String jogador, String monstro) {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        String data = dateFormat.format(new Date());
+        File tempDir = new File("temp");
+        if (!tempDir.exists()) {
+            tempDir.mkdirs();
+        }
+
+        try {
+            FileWriter writer = new FileWriter("temp/" + nick + ".csv", true);
+            writer.write(data + "; Classe: " + jogador + "; Inimigo: " + monstro + "\n");
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }
